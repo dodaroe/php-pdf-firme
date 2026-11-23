@@ -1,0 +1,21 @@
+{
+    "name": "dodaroe/php-pdf-firme",
+    "description": "Firme PAdES dentro un PDF (lettura e controllo) e segnatura di protocollo apposta come aggiornamento incrementale, senza invalidare le firme già presenti. PHP puro, nessuna dipendenza.",
+    "type": "library",
+    "license": "AGPL-3.0-or-later",
+    "keywords": ["pdf", "pades", "firma digitale", "protocollo", "segnatura", "incremental update"],
+    "require": {
+        "php": ">=8.1"
+    },
+    "suggest": {
+        "ext-zlib": "Serve a leggere i PDF con la tabella dei riferimenti o gli oggetti compressi (quasi tutti i PDF di oggi)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dodaroe\\PdfFirme\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/esegui.php"
+    }
+}
